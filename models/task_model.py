@@ -1,10 +1,11 @@
+import os
 import mysql.connector
 
 db = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="sqlpass974.",
-    database="gestion_tareas"
+    host=os.environ.get('DB_HOST'),
+    user=os.environ.get('DB_USER'),
+    password=os.environ.get('DB_PASSWORD'),
+    database=os.environ.get('DB_NAME')
 )
 
 cursor = db.cursor()

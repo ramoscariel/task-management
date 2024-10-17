@@ -1,7 +1,9 @@
 from flask import Flask
 from controllers.task_controller import task_bp
+from config import Config
 
 app = Flask(__name__)
+app.config.from_object(Config)
 
 # Register blueprint
 app.register_blueprint(task_bp)
