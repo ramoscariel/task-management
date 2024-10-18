@@ -1,5 +1,7 @@
 # task-management
- 
+
+Vídeo: https://youtu.be/WeLWSDYp4E4
+
 Este proyecto se basa en el en el Mini Core de David Terán: 
 
 https://github.com/Davidm2606/FiltrarFechasWeb
